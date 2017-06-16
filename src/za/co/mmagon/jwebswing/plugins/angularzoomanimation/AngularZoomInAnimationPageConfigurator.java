@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angulartouch;
+package za.co.mmagon.jwebswing.plugins.angularzoomanimation;
 
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;

@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angulartouch;
+package za.co.mmagon.jwebswing.plugins.angularzoomanimation;
 
 import org.junit.Test;
 import za.co.mmagon.BaseTestClass;

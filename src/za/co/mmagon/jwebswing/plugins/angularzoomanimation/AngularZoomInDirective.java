@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angulartouch;
+package za.co.mmagon.jwebswing.plugins.angularzoomanimation;
 
 import za.co.mmagon.FileTemplates;
 import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
