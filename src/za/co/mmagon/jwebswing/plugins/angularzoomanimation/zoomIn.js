@@ -1,4 +1,3 @@
-
 JW_APP_NAME.directive('zoomIn', zoomIn);
 function zoomIn($timeout, $rootScope) {
     return {
