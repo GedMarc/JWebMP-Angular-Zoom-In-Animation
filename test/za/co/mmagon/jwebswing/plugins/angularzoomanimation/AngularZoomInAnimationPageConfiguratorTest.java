@@ -9,16 +9,16 @@ import za.co.mmagon.jwebswing.Page;
  */
 public class AngularZoomInAnimationPageConfiguratorTest extends BaseTestClass
 {
-
+	
 	public AngularZoomInAnimationPageConfiguratorTest()
 	{
 	}
-
+	
 	@Test
 	public void testSomeMethod()
 	{
 		Page p = getInstance();
 		System.out.println(p.toString(0));
 	}
-
+	
 }
