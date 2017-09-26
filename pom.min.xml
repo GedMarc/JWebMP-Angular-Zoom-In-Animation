@@ -1,22 +1,17 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>za.co.mmagon</groupId>
     <artifactId>jwebswing-angular-ui-zoom</artifactId>
     <version>0.0.0_0</version>
     <packaging>jar</packaging>
-
     <name>Angular UI Zoom</name>
     <description>The JWebSwing implementation for Angular UI Zoom</description>
     <url>https://github.com/GedMarc/Angular-UI-Zoom</url>
-
     <issueManagement>
         <system>Github</system>
         <url>https://github.com/GedMarc/Angular-UI-Zoom/issues</url>
     </issueManagement>
-
-
     <repositories>
         <repository>
             <id>oss.sonatype.org</id>
@@ -33,18 +28,14 @@
             <url>https://www.armin.software/artifactory/libs-snapshot</url>
         </repository>
     </repositories>
-
     <profiles>
         <profile>
             <id>development</id>
-            <properties>
-            </properties>
-
+            <properties></properties>
         </profile>
         <profile>
             <id>unittest-profile</id>
-            <properties>
-            </properties>
+            <properties></properties>
             <build>
                 <plugins>
                     <plugin>
@@ -67,7 +58,6 @@
                                     <stripVersion>true</stripVersion>
                                 </configuration>
                             </execution>
-
                             <execution>
                                 <id>copy-test-libs</id>
                                 <phase>generate-test-resources</phase>
@@ -118,7 +108,6 @@
                         </executions>
                         <version>${maven.javadoc.version}</version>
                     </plugin>
-
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -130,8 +119,7 @@
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
-                                <configuration>
-                                </configuration>
+                                <configuration></configuration>
                             </execution>
                         </executions>
                     </plugin>
@@ -139,7 +127,6 @@
             </build>
         </profile>
     </profiles>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src</src.dir>
@@ -150,12 +137,10 @@
         <maven.source.version>2.1.2</maven.source.version>
         <maven.resources.version>3.0.2</maven.resources.version>
         <netbeans.hint.license>gpl30</netbeans.hint.license>
-
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-		<sonar.host.url>https://www.armin.software/sonar</sonar.host.url>
+        <sonar.host.url>https://www.armin.software/sonar</sonar.host.url>
     </properties>
-
     <build>
         <sourceDirectory>${src.dir}</sourceDirectory>
         <testSourceDirectory>${test.dir}</testSourceDirectory>
@@ -171,7 +156,6 @@
                         </goals>
                     </execution>
                 </executions>
-
                 <version>${maven.jar.version}</version>
             </plugin>
             <plugin>
@@ -179,8 +163,15 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
-                    <target>1.8</target>                </configuration>            </plugin>            <plugin>                <groupId>org.sonarsource.scanner.maven</groupId>                <artifactId>sonar-maven-plugin</artifactId>                <version>3.3.0.603</version>            </plugin>        </plugins>
-
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>jar-resources</directory>
@@ -210,7 +201,6 @@
             </resource>
         </resources>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -270,13 +260,30 @@
         <name>Armin Software</name>
         <url>http://www.armin.software</url>
     </organization>
-
     <scm>
         <url>http://www.armin.software/artifactory</url>
         <developerConnection>Marc Magon</developerConnection>
     </scm>
-
     <ciManagement>
         <system>TeamCity</system>
         <url>http://www.armin.software/teamcity</url>
-    </ciManagement>    <reporting>        <plugins>            <plugin>                <groupId>org.jacoco</groupId>                <artifactId>jacoco-maven-plugin</artifactId>     <version>0.7.9</version>           <reportSets>                    <reportSet>                        <reports>                            <!-- select non-aggregate reports -->                            <report>report</report>                        </reports>                    </reportSet>                </reportSets>            </plugin>        </plugins>    </reporting></project>
+    </ciManagement>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
+
+
