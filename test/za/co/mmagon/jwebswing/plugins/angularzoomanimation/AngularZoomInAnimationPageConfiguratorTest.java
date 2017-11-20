@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 /**
  * @author Marc Magon
  */
@@ -19,6 +21,7 @@ public class AngularZoomInAnimationPageConfiguratorTest extends BaseTestClass
 	{
 		Page p = getInstance();
 		System.out.println(p.toString(0));
+		assertTrue(p.toString(0).contains("jwApp.directive('zoomIn', zoomIn);"));
 	}
 	
 }
