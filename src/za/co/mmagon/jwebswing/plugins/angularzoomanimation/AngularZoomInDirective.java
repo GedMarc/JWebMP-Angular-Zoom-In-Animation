@@ -7,11 +7,11 @@ import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
  * @author Marc Magon
  * @since 30 May 2017
  */
-public class AngularZoomInDirective extends AngularDirectiveBase
+class AngularZoomInDirective extends AngularDirectiveBase
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new AngularZoomInDirective
 	 */
@@ -19,7 +19,7 @@ public class AngularZoomInDirective extends AngularDirectiveBase
 	{
 		super("ZoomIn");
 	}
-	
+
 	@Override
 	public String renderFunction()
 	{
