@@ -33,9 +33,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		url = "https://www.akveo.com/products.html")
 public class AngularZoomInAnimationPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new AngularZoomInAnimationPageConfigurator
 	 */
@@ -43,19 +43,19 @@ public class AngularZoomInAnimationPageConfigurator extends PageConfigurator
 	{
 		//Nothing needed
 	}
-	
+
 	public static void addZoomEffect(ComponentHierarchyBase component)
 	{
 		component.addClass("zoomIn");
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
-			AngularPageConfigurator.setRequired(page.getBody(), true);
+			JQueryPageConfigurator.setRequired(true);
+			AngularPageConfigurator.setRequired(true);
 			page.getAngular().getAngularDirectives().add(new AngularZoomInDirective());
 		}
 		return page;
