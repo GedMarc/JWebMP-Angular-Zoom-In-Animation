@@ -15,23 +15,25 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
  * @since 16 Jun 2017
  */
 @PluginInformation(pluginName = "Angular Zoom In",
-		pluginDescription = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
+		pluginDescription = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " +
+				                    "element.",
 		pluginUniqueName = "jwebswing-angular-zoom-in-animation",
 		pluginVersion = "1.0.0",
 		pluginCategories = "angular,animation,zoom, ui,web ui, framework",
-		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
+		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " +
+				                 "element.",
 		pluginSourceUrl = "https://www.akveo.com/products.html",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-Zoom-In-Animation/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-Zoom-In-Animation",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.akveo.com/products.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download"
-)
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download")
 @ComponentInformation(name = "Angular Zoom In",
 		description = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
 		url = "https://www.akveo.com/products.html")
-public class AngularZoomInAnimationPageConfigurator extends PageConfigurator
+public class AngularZoomInAnimationPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -56,7 +58,6 @@ public class AngularZoomInAnimationPageConfigurator extends PageConfigurator
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
-			page.getAngular().getAngularDirectives().add(new AngularZoomInDirective());
 		}
 		return page;
 	}
