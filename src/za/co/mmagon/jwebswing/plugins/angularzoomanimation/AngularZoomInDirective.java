@@ -7,7 +7,8 @@ import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
  * @author Marc Magon
  * @since 30 May 2017
  */
-class AngularZoomInDirective extends AngularDirectiveBase
+public class AngularZoomInDirective
+		extends AngularDirectiveBase
 {
 
 	private static final long serialVersionUID = 1L;
@@ -23,6 +24,7 @@ class AngularZoomInDirective extends AngularDirectiveBase
 	@Override
 	public String renderFunction()
 	{
-		return FileTemplates.getFileTemplate(AngularZoomInDirective.class, "zoomIn").toString();
+		return FileTemplates.getFileTemplate(AngularZoomInDirective.class, "zoomIn.min")
+		                    .toString();
 	}
 }
