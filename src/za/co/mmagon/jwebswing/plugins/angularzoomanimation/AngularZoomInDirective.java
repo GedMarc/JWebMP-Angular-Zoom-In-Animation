@@ -24,7 +24,7 @@ public class AngularZoomInDirective
 	@Override
 	public String renderFunction()
 	{
-		return FileTemplates.getFileTemplate(AngularZoomInDirective.class, "zoomIn.min")
+		return FileTemplates.getFileTemplate(AngularZoomInDirective.class, "zoomIn", "zoomIn.min.js")
 		                    .toString();
 	}
 }
