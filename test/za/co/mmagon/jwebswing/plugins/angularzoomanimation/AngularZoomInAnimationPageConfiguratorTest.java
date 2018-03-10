@@ -9,7 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * @author Marc Magon
  */
-public class AngularZoomInAnimationPageConfiguratorTest extends BaseTestClass
+public class AngularZoomInAnimationPageConfiguratorTest
+		extends BaseTestClass
 {
 
 	public AngularZoomInAnimationPageConfiguratorTest()
@@ -20,9 +21,11 @@ public class AngularZoomInAnimationPageConfiguratorTest extends BaseTestClass
 	public void testSomeMethod()
 	{
 		Page p = new Page();
-		p.getOptions().setDynamicRender(false);
+		p.getOptions()
+		 .setDynamicRender(false);
 		System.out.println(p.toString(0));
-		assertTrue(p.toString(0).contains("jwApp.directive('zoomIn', zoomIn);"));
+		assertTrue(p.toString(0)
+		            .contains("zoomIn"));
 	}
 
 }
