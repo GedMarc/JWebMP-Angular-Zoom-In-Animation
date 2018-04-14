@@ -1,12 +1,12 @@
-package za.co.mmagon.jwebswing.plugins.angularzoomanimation;
+package com.jwebmp.plugins.angularzoomanimation;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
-import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.ComponentHierarchyBase;
+import com.jwebmp.base.angular.AngularPageConfigurator;
+import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * Allows for elements to have a zoom in animation by adding a class
@@ -15,13 +15,11 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
  * @since 16 Jun 2017
  */
 @PluginInformation(pluginName = "Angular Zoom In",
-		pluginDescription = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " +
-				                    "element.",
+		pluginDescription = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
 		pluginUniqueName = "jwebswing-angular-zoom-in-animation",
 		pluginVersion = "1.0.0",
 		pluginCategories = "angular,animation,zoom, ui,web ui, framework",
-		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " +
-				                 "element.",
+		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
 		pluginSourceUrl = "https://www.akveo.com/products.html",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-Zoom-In-Animation/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-Zoom-In-Animation",
