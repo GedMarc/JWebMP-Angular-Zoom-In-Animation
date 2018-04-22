@@ -17,7 +17,6 @@
 
 package com.jwebmp.plugins.angularzoomanimation;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -26,7 +25,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class AngularZoomInAnimationPageConfiguratorTest
-		extends BaseTestClass
+
 {
 
 	public AngularZoomInAnimationPageConfiguratorTest()
