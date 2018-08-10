@@ -8,6 +8,8 @@ import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * Allows for elements to have a zoom in animation by adding a class
  *
@@ -46,6 +48,7 @@ public class AngularZoomInAnimationPageConfigurator
 		component.addClass("zoomIn");
 	}
 
+	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
