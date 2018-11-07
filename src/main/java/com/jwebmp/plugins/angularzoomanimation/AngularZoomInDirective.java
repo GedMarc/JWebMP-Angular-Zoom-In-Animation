@@ -45,4 +45,15 @@ public class AngularZoomInDirective
 		return FileTemplates.getFileTemplate(AngularZoomInDirective.class, "zoomIn", "zoomIn.min.js")
 		                    .toString();
 	}
+
+	/**
+	 * If this page configurator is enabled
+	 *
+	 * @return if the configuration must run
+	 */
+	@Override
+	public boolean enabled()
+	{
+		return AngularZoomInAnimationPageConfigurator.isEnabled();
+	}
 }
