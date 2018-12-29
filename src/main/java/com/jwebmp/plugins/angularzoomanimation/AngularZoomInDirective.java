@@ -19,18 +19,14 @@ package com.jwebmp.plugins.angularzoomanimation;
 
 import com.jwebmp.core.FileTemplates;
 import com.jwebmp.core.base.angular.directives.AngularDirectiveBase;
-import com.jwebmp.core.base.angular.services.IAngularDirective;
 
 /**
  * @author Marc Magon
  * @since 30 May 2017
  */
 public class AngularZoomInDirective
-		extends AngularDirectiveBase
-		implements IAngularDirective<AngularZoomInDirective>
+		extends AngularDirectiveBase<AngularZoomInDirective>
 {
-
-
 	/*
 	 * Constructs a new AngularZoomInDirective
 	 */
