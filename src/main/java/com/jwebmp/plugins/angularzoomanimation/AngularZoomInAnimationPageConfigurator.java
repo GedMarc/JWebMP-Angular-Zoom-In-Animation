@@ -5,6 +5,7 @@ import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -28,7 +29,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.akveo.com/products.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download")
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-angular-ui-zoom",
+		pluginModuleName = "com.jwebmp.plugins.angularzoomanimation",
+		pluginStatus = PluginStatus.Released
+)
 @ComponentInformation(name = "Angular Zoom In",
 		description = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
 		url = "https://www.akveo.com/products.html")
