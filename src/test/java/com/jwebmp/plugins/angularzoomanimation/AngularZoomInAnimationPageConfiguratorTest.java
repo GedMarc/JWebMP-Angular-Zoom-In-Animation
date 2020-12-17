@@ -35,7 +35,7 @@ public class AngularZoomInAnimationPageConfiguratorTest
 	@Test
 	public void testSomeMethod()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		p.getOptions()
 		 .setDynamicRender(false);
 		System.out.println(p.toString(0));
