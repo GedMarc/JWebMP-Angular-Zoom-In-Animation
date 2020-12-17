@@ -19,17 +19,17 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Angular Zoom In",
 		pluginDescription = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
-		pluginUniqueName = "jwebswing-angular-zoom-in-animation",
+		pluginUniqueName = "jwebmp-angular-zoom-in-animation",
 		pluginVersion = "1.0.0",
 		pluginCategories = "angular,animation,zoom, ui,web ui, framework",
 		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
-		pluginSourceUrl = "https://www.akveo.com/products.html",
+		pluginSourceUrl = "https://angularscript.com/simple-image-zoom-angularjs/",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-Zoom-In-Animation/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-Zoom-In-Animation",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
-		pluginOriginalHomepage = "https://www.akveo.com/products.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download",
+		pluginOriginalHomepage = "https://angularscript.com/simple-image-zoom-angularjs/",
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.angular/jwebmp-angular-ui-zoom",
 		pluginGroupId = "com.jwebmp.plugins.angular",
 		pluginArtifactId = "jwebmp-angular-ui-zoom",
 		pluginModuleName = "com.jwebmp.plugins.angularzoomanimation",
@@ -37,7 +37,7 @@ import jakarta.validation.constraints.NotNull;
 )
 @ComponentInformation(name = "Angular Zoom In",
 		description = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
-		url = "https://www.akveo.com/products.html")
+		url = "https://angularscript.com/simple-image-zoom-angularjs/")
 public class AngularZoomInAnimationPageConfigurator
 		implements IPageConfigurator<AngularZoomInAnimationPageConfigurator>
 {
