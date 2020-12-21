@@ -17,9 +17,9 @@ import jakarta.validation.constraints.NotNull;
  * @author GedMarc
  * @since 16 Jun 2017
  */
-@PluginInformation(pluginName = "Angular Zoom In",
+@PluginInformation(pluginName = "Zoom In",
 		pluginDescription = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
-		pluginUniqueName = "jwebmp-angular-zoom-in-animation",
+		pluginUniqueName = "angular-zoom-in-animation",
 		pluginVersion = "1.0.0",
 		pluginCategories = "angular,animation,zoom, ui,web ui, framework",
 		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
