@@ -90,8 +90,8 @@ public class AngularZoomInAnimationPageConfigurator
 	{
 		if (!page.isConfigured() && enabled())
 		{
-			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
+			
+			
 		}
 		return page;
 	}
